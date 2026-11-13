@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Online Quiz | Abi</title>
+
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+            🧠 Quiz<span>Master</span>
+        </div>
+
+        <div class="question-count">
+            Question <span id="currentQuestion">1</span> / 20
+        </div>
+
+    </header>
+
+
+    <!-- Main Quiz -->
+
+    <main class="quiz-container">
+
+        <div class="quiz-card">
+
+            <div class="progress-container">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+
+            <div class="quiz-top">
+
+                <span id="questionNumber">
+                    Question 1
+                </span>
+
+                <span id="score">
+                    Score: 0
+                </span>
+
+            </div>
+
+
+            <h2 id="question">
+                Question will appear here
+            </h2>
+
+
+            <div id="options" class="options">
+
+                <!-- Options generated using JavaScript -->
+
+            </div>
+
+
+            <button
+                id="nextBtn"
+                class="next-btn"
+                onclick="nextQuestion()">
+
+                Next Question →
+
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- Result -->
+
+    <section id="result" class="result-section">
+
+        <div class="result-card">
+
+            <div class="result-icon">
+                🎉
+            </div>
+
+            <h1>
+                Quiz Completed!
+            </h1>
+
+            <p>
+                Your final score is
+            </p>
+
+            <div id="finalScore" class="final-score">
+                0 / 20
+            </div>
+
+            <p id="resultMessage">
+                Good job!
+            </p>
+
+            <button
+                class="restart-btn"
+                onclick="restartQuiz()">
+
+                🔄 Try Again
+
+            </button>
+
+            <a
+                href="../../index.html"
+                class="home-btn">
+
+                🏠 Back to Portfolio
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>
